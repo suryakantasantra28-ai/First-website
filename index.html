@@ -14,13 +14,14 @@
  color:rgb(255 231 0);
  text-align:center;
  text-shadow:1px 1px 2px  black;
- font-size:30px;
+ font-size:42px;
  box-shadow:1px 1px 2px #3b2c00;
  }
  #search{width:80%;
  height:30px;
  border-radius:8px;
  border-color: red;
+ box-shadow:2px 2px 2px black;
  }
 #enter{
 width:50px;
@@ -28,12 +29,19 @@ height:30px;
 background-color:#0e9500;
 color:#b5ffad;
 border-radius:8px;
+box-shadow:2px 2px 2px black;
 transition:background .5s ease;
 }
 #enter:hover{
 background-color:#6aff5b;
 scale:1.15;
 color:#021b00;
+}
+#home{width:100%;
+height:auto;
+}
+#Collection{width:auto;
+height:auto;
 }
 p{width:100%;
 height:50px;
@@ -43,22 +51,69 @@ font-size:40px;
 text-align:center;
 text-shadow:1px 1px 2px black;
 }
+.header{width:100%;
+height:135px;
+position:sticky;
+top:0px;
+background:#fff1c8;
+border-radius:5px;
+}
+nav{width:100%;
+height:10px;
+text-align:center;
+}
+nav a{color:#910000;
+text-decoration:none;
+font-size:large;
+padding-left:30px;
+padding-right:30px;
+padding-top:5px;
+padding-bottom:5px;
+transition:background.7s ease;
+}
+nav a:hover{background:#85e8fd;
+color:#090158;
+border-radius:5px;
+}
  </style>
  </head>
  <body>
+ <div class="header">
  <div class="label">
  7 HORSE GOLD
- </div><br>
+ </div>
+ <br>
+
+ <nav>
+ <a href="#">Home</a>
+ <a href="#">Collection</a>
+ <a href="#">About us</a>
+ <a href="#">Contact us</a>
+ </nav>
+
+ <br>
  <input id="search" type="text" name="search" placeholder="search">
- <button id="enter" name="enter"><b> Enter</b></button> 
-</div><br>
-<img src="banner.jpg" width="100%" height="auto" style="padding-top:10px;padding-bottom:10px;"><br>
-<p>Collection</p>
+ <button id="enter" name="enter">
+ <b> Enter</b>
+ </button> 
+</div>
+<br>
+<div class="home">
+<img src="banner.jpg" width="100%" height="auto" style="padding-top:10px;padding-bottom:10px;">
+<br>
+</div>
+<img src="wp.png" width="40px" height="auto" style="position:fixed;right:10px;bottom:10px;">
+<div class="Collection">
+<p>
+Collection
+</p>
 <img src="diamond3.png" width="100%" height="auto">
-<img src="bridal3.png" width="100%" height="auto" style="padding-top:10px;"><br>
+<img src="bridal3.png" width="100%" height="auto" style="padding-top:10px;">
+<br>
 <img src="ring.jpeg" width="24%" height="auto" style="position:absolute;left:.5%; padding-top:10px;">
 <img src="earring.jpeg" width="24%" height="auto" style="position:absolute;left:25.5%; padding-top:10px;">
 <img src="pandent.jpeg" width="24%" height="auto" style="position:absolute;right:25.5%; padding-top:10px;">
-<img src="set.jpeg" width="24%" height="auto" style="position:absolute;right:.5%; padding-top:10px; ">
+<img src="set.jpeg" width="24%" height="auto" style="position:absolute;right:.5%; padding-top:10px;">
+</div>
 </body>      
 </html>
